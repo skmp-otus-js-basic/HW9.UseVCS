@@ -4,6 +4,7 @@ import { addTitle, writeResult } from "../index";
 export function homeWork_1() {
   addTitle(0);
 
+  // 1.В переменных a и b хранятся числа. Написать программу, которая выводит в консоль произведение и сумму этих чисел.
   const a = 5;
   const b = 17;
 
@@ -15,7 +16,7 @@ export function homeWork_1() {
   // 2. В двух переменных хранятся строки символов. Написать программу, которая выведет в консоль суммарное количество символов в обоих строках.
   const str1 = "Lorem ipsum";
   const str2 = "dolor sit amet";
-  message = `2. Количество символов в строках '${str1}' и '${str2}' равно: ${calc.stringLength(str1, str2)}`;
+  message = `Количество символов в строках '${str1}' и '${str2}' равно: ${calc.stringLength(str1, str2)}`;
   writeResult(message);
 
   // 3. Написать программу, которая запрашивает у пользователя ввод трёхзначного числа, а потом выводит в консоль сумму цифр введённого числа.
@@ -32,6 +33,6 @@ export function homeWork_1() {
     }
     break;
   }
-  message = `3. Введено число ${str}. Сумма цифр введенного числа: ${calc.sumOfNumbers(str)}`;
+  message = `Введено число ${str}. Сумма цифр введенного числа: ${calc.sumOfNumbers(str)}`;
   writeResult(message);
 }

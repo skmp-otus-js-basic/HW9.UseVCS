@@ -1,6 +1,6 @@
 import { homeWork_1 } from "./HW1/homeWork_1";
 
-const hw_title = ["Домашнее задание № 1 «Линейные алгоритмы»"];
+const hw_title = ["Домашнее задание № 1 «Линейные алгоритмы»", "Домашнее задание №2 «Условия»"];
 let app = document.querySelector("#app");
 let ol = document.createElement("ol");
 homeWork_1();
