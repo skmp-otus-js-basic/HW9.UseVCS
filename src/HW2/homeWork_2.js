@@ -1,7 +1,6 @@
 import { addTitle, writeResult } from "../index";
 import { circleFit, maxNumber, monthName } from "./condition";
 
-
 export function homeWork_2(num) {
   addTitle(num);
 
@@ -16,8 +15,8 @@ export function homeWork_2(num) {
   while (true) {
     const str = prompt("Введите число от 1 до 12:");
     const month = monthName(str);
-    if(!month) continue;
-    writeResult(month);
+    if (!month) continue;
+    writeResult(`Месяц номер ${str} это: ${month}`);
     break;
   }
 
