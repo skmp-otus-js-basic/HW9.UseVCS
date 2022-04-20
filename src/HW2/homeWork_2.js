@@ -13,7 +13,7 @@ export function homeWork_2(num) {
   // 2.Запросить у пользователя ввод числа от 1 до 12. Вывести в консоль название месяца, соответствующее
   // этому числу (1 — январь, 2 — февраль и т.д.).
   while (true) {
-    const str = prompt("Введите число от 1 до 12:");
+    const str = prompt("Введите номер месяца от 1 до 12:");
     const month = monthName(str);
     if (!month) continue;
     writeResult(`Месяц номер ${str} это: ${month}`);
