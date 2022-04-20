@@ -1,5 +1,5 @@
 import { addTitle, writeResult } from "../index";
-import { circleFit, maxNumber, monthName } from "./condition";
+import { circleFit, maxNumber, monthName } from "./conditions";
 
 export function homeWork_2(num) {
   addTitle(num);

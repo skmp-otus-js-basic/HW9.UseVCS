@@ -1,4 +1,4 @@
-import { addProperty, deepCopy, destruct } from "./object";
+import { addProperty, deepCopy, destruct } from "./objects";
 
 describe("Module hw4 tests", () => {
   let user;

@@ -1,5 +1,5 @@
 import { addTitle, writeResult } from "../index";
-import { average, getSum, multiTable } from "./cycle";
+import { average, getSum, multiTable } from "./cycles";
 
 export function homeWork_3(num) {
   addTitle(num);

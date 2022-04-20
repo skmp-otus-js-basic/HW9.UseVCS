@@ -1,5 +1,5 @@
 import { addTitle, writeResult } from "../index";
-import { addProperty, deepCopy, destruct } from "./object";
+import { addProperty, deepCopy, destruct } from "./objects";
 
 export function homeWork_4(num) {
   addTitle(num);

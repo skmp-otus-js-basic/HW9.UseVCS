@@ -1,4 +1,4 @@
-import { circleFit, maxNumber, monthName } from "./condition";
+import { circleFit, maxNumber, monthName } from "./conditions";
 
 describe("Module hw2 tests", () => {
   it("Выбрать максимальное число", () => {

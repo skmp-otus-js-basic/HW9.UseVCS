@@ -1,4 +1,4 @@
-import { getSum, multiTable, average } from "./cycle";
+import { getSum, multiTable, average } from "./cycles";
 
 describe("Module hw3 tests", () => {
   it("Сумма целых чисел", () => {
