@@ -1,9 +1,7 @@
-import { addTitle, writeResult } from "../index";
+import { writeResult } from "../index";
 import { addProperty, deepCopy, destruct } from "./objects";
 
-export function homeWork_4(num) {
-  addTitle(num);
-
+export function homeWork_4() {
   const user = { name: "John" };
 
   // 1. Запросить у пользователя ввод числа. Записать введенное значение в поле age объекта user.

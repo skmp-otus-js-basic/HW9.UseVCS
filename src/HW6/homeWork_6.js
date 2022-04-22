@@ -1,9 +1,7 @@
-import { addTitle, writeResult } from "../index";
+import { writeResult } from "../index";
 import { diff, isWord, pow } from "./functions";
 
-export function homeWork_6(num) {
-  addTitle(num);
-
+export function homeWork_6() {
   // 1. Напишите функцию diff, которая получает в качестве параметров 2 числа и возвращает разницу между наибольшим и наименьшим.
   const n1 = 70;
   const n2 = 101;

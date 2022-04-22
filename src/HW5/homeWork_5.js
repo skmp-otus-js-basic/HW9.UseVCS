@@ -1,9 +1,7 @@
-import { addTitle, writeResult } from "../index";
+import { writeResult } from "../index";
 import { arraySum, doubleElement, minMaxElement } from "./arrays";
 
-export function homeWork_5(num) {
-  addTitle(num);
-
+export function homeWork_5() {
   let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
   // 1. Выведите в консоль сумму всех элементов массива.

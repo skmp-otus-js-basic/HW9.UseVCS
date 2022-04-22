@@ -1,9 +1,7 @@
 import * as calc from "./calc";
-import { addTitle, writeResult } from "../index";
+import { writeResult } from "../index";
 
-export function homeWork_1(num) {
-  addTitle(num);
-
+export function homeWork_1() {
   // 1. В переменных a и b хранятся числа. Написать программу, которая выводит в консоль произведение и сумму этих чисел.
   const a = 5;
   const b = 17;
