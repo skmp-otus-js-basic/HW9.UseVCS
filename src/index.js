@@ -6,6 +6,7 @@ import { homeWork_5 } from "./HW5/homeWork_5";
 import { homeWork_6 } from "./HW6/homeWork_6";
 import { homeWork_7 } from "./HW7/homeWork_7";
 import { homeWork_8 } from "./HW8/homeWork_8";
+import { homeWork_9 } from "./HW9/homeWork_9";
 
 const hwTitle = [
   "Домашнее задание №1 «Линейные алгоритмы»",
@@ -76,7 +77,7 @@ function runHomeWork() {
       break;
     }
     case "9": {
-      // homeWork_9(8);
+      homeWork_9();
       break;
     }
     case "10": {
