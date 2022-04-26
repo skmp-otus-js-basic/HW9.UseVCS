@@ -10,7 +10,7 @@ export function dateFormat(strDate) {
 
 export function weekDay(strDate) {
   const tsDate = dateFormat(strDate);
-  let date = new Date(tsDate);
+  const date = new Date(tsDate);
   const day = date.getDay();
   const week = [
     "Воскресенье",

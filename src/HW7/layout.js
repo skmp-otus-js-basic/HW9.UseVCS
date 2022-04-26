@@ -13,7 +13,7 @@ export function createUI(e) {
 }
 
 export function hideButton() {
-  let button = element.querySelector(".button");
+  const button = element.querySelector(".button");
   const text = getInputText();
   button.hidden = text.length === 0;
 }

@@ -1,7 +1,7 @@
 import { writeResult } from "../index";
 import { average, getSum, multiTable } from "./cycles";
 
-export function homeWork_3() {
+export function homeWork3() {
   // 1. Вывести в консоль сумму всех целых чисел от 50 до 100.
   const a = 50;
   const b = 100;

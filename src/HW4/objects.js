@@ -3,7 +3,7 @@ export function addProperty(obj, age, num) {
 }
 
 export function deepCopy(obj, value) {
-  return Object.assign({}, obj, { role: value });
+  return { ...obj, role: value };
 }
 
 export function destruct(obj) {

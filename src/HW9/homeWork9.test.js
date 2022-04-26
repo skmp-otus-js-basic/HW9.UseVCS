@@ -12,7 +12,8 @@ describe("Module hw9 tests", () => {
   });
 
   it("Длина окружности и площадь круга", () => {
-    let l, s;
+    let l;
+    let s;
     const data = [7, 3, 8, 4, 8];
     data.forEach((r) => {
       l = 2 * r * 3.14159;

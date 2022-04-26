@@ -1,4 +1,4 @@
-import { createUI, addElement } from "./layout";
+import { createUI } from "./layout";
 
 describe("Module hw7 tests", () => {
   let el;

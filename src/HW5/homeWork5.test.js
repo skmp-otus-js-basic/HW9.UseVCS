@@ -1,7 +1,7 @@
 import { arraySum, doubleElement, minMaxElement } from "./arrays";
 
 describe("Module hw5 tests", () => {
-  let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
   it("Сумма всех элементов массива", () => {
     expect(arraySum(arr)).toBe(55);

@@ -1,7 +1,7 @@
 import { writeResult } from "../index";
 import * as reg from "./regex";
 
-export function homeWork_10() {
+export function homeWork10() {
   // Является ли введённая строка датой YYYY-MM-DDTHH:mm:ss.sssZ
   let str = "2019-08-25T10:41:50.417+03:00";
   let x = reg.isDate(str) ? "" : "не ";

@@ -1,13 +1,13 @@
-import { homeWork_1 } from "./HW1/homeWork_1";
-import { homeWork_2 } from "./HW2/homeWork_2";
-import { homeWork_3 } from "./HW3/homeWork_3";
-import { homeWork_4 } from "./HW4/homeWork_4";
-import { homeWork_5 } from "./HW5/homeWork_5";
-import { homeWork_6 } from "./HW6/homeWork_6";
-import { homeWork_7 } from "./HW7/homeWork_7";
-import { homeWork_8 } from "./HW8/homeWork_8";
-import { homeWork_9 } from "./HW9/homeWork_9";
-import { homeWork_10 } from "./HW10/homeWork_10";
+import { homeWork1 } from "./HW1/homeWork1";
+import { homeWork2 } from "./HW2/homeWork2";
+import { homeWork3 } from "./HW3/homeWork3";
+import { homeWork4 } from "./HW4/homeWork4";
+import { homeWork5 } from "./HW5/homeWork5";
+import { homeWork6 } from "./HW6/homeWork6";
+import { homeWork7 } from "./HW7/homeWork7";
+import { homeWork8 } from "./HW8/homeWork8";
+import { homeWork9 } from "./HW9/homeWork9";
+import { homeWork10 } from "./HW10/homeWork10";
 
 const hwTitle = [
   "Домашнее задание №1 «Линейные алгоритмы»",
@@ -22,7 +22,7 @@ const hwTitle = [
   "Домашнее задание №10 «Регулярные выражения»",
 ];
 
-let nav = document.querySelector("#buttons");
+const nav = document.querySelector("#buttons");
 let button;
 for (let i = 1; i <= 10; i++) {
   addButton(i);
@@ -46,51 +46,53 @@ function runHomeWork() {
   addTitle(current.id);
   switch (current.id) {
     case "1": {
-      homeWork_1();
+      homeWork1();
       break;
     }
     case "2": {
-      homeWork_2();
+      homeWork2();
       break;
     }
     case "3": {
-      homeWork_3();
+      homeWork3();
       break;
     }
     case "4": {
-      homeWork_4();
+      homeWork4();
       break;
     }
     case "5": {
-      homeWork_5();
+      homeWork5();
       break;
     }
     case "6": {
-      homeWork_6();
+      homeWork6();
       break;
     }
     case "7": {
-      homeWork_7(section);
+      homeWork7(section);
       break;
     }
     case "8": {
-      homeWork_8();
+      homeWork8();
       break;
     }
     case "9": {
-      homeWork_9();
+      homeWork9();
       break;
     }
     case "10": {
-      homeWork_10();
+      homeWork10();
       break;
     }
+    default:
+      break;
   }
 }
 
 function showPreview(evt) {
-  preview.style.left = evt.pageX + 20 + "px";
-  preview.style.top = evt.pageY + 10 + "px";
+  preview.style.left = `${evt.pageX + 20}px`;
+  preview.style.top = `${evt.pageY + 10}px`;
   preview.innerText = hwTitle[evt.target.id - 1];
   preview.className = "active";
 }
@@ -111,7 +113,7 @@ let ol;
 
 export function addTitle(num) {
   section.innerHTML = "";
-  let title = document.createElement("h4");
+  const title = document.createElement("h4");
   title.innerText = hwTitle[num - 1];
   section.append(title);
   ol = document.createElement("ol");

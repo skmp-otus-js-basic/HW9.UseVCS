@@ -1,7 +1,7 @@
 import * as calc from "./calc";
 import { writeResult } from "../index";
 
-export function homeWork_1() {
+export function homeWork1() {
   // 1. В переменных a и b хранятся числа. Написать программу, которая выводит в консоль произведение и сумму этих чисел.
   const a = 5;
   const b = 17;

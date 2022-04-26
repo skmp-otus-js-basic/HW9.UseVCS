@@ -1,7 +1,7 @@
 import { writeResult } from "../index";
 import { weekDay, minElapsed, dateCompare } from "./dates";
 
-export function homeWork_8() {
+export function homeWork8() {
   // 1. Запросите у пользователя дату в формате ДД.ММ.ГГГГ. Напишите программу, выводящую день недели по введённой дате.
   const strDate = prompt("ДД.ММ.ГГГГ");
   const wd = weekDay(strDate);

@@ -11,11 +11,10 @@ export function stringLength(a, b) {
 }
 
 export function sumOfNumbers(str) {
-  let sum = 0;
+  let s = 0;
   const strArr = str.split("");
   strArr.forEach((char) => {
-    sum += Number(char);
+    s += Number(char);
   });
-  return sum;
+  return s;
 }
-

@@ -1,8 +1,8 @@
 import { writeResult } from "../index";
 import * as math from "./maths";
 
-export function homeWork_9() {
-  //1. Даны длины трёх сторон треугольника. Определить, является ли треугольник прямоугольным.
+export function homeWork9() {
+  // 1. Даны длины трёх сторон треугольника. Определить, является ли треугольник прямоугольным.
   let a = 7;
   let b = 5;
   let c = 10;
@@ -31,9 +31,11 @@ export function homeWork_9() {
       break;
     }
     case 2: {
-      x = base[0] + ", " + base[1];
+      x = `${base[0]}, ${base[1]}`;
       break;
     }
+    default:
+      break;
   }
 
   writeResult(
