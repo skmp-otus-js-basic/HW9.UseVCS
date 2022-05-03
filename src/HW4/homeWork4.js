@@ -1,7 +1,7 @@
 import { writeResult } from "../index";
-import { addProperty, deepCopy, destruct } from "./objects";
+import { addProperty, objCopy, destruct } from "./objects";
 
-export function homeWork4() {
+export default function homeWork4() {
   const user = { name: "John" };
 
   // 1. Запросить у пользователя ввод числа. Записать введенное значение в поле age объекта user.
@@ -14,7 +14,7 @@ export function homeWork4() {
 
   // 2. Создать копию объекта user с именем admin. Добавить новому объекту поле role со значением ‘admin’.
   const value = "admin";
-  const admin = deepCopy(user, value);
+  const admin = objCopy(user, value);
   writeResult(`Создана копия user с новым полем role: ${value}: `);
 
   // 3. Записать все значения полей объекта admin в отдельные переменные. Имена переменных должны совпадать с названиями полей.

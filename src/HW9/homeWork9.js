@@ -1,14 +1,16 @@
 import { writeResult } from "../index";
 import * as math from "./maths";
 
-export function homeWork9() {
+export default function homeWork9() {
   // 1. Даны длины трёх сторон треугольника. Определить, является ли треугольник прямоугольным.
-  let a = 7;
-  let b = 5;
-  let c = 10;
-  const rect = math.triangle(a, b, c);
+  const cathetus1 = 7;
+  const cathetus2 = 5;
+  const hypotenuse = 10;
+  const rect = math.triangle(cathetus1, cathetus2, hypotenuse);
   let x = rect ? "" : "не ";
-  writeResult(`A=${a}, B=${b}, C=${c}. Треугольник ${x}прямоугольный`);
+  writeResult(
+    `A=${cathetus1}, B=${cathetus2}, C=${hypotenuse}. Треугольник ${x}прямоугольный`
+  );
 
   // 2. Пользователь вводит число R. Написать программу, которая выведет в консоль длину окружности и площадь круга с радиусом R.
   const r = +prompt("Радиус");
@@ -17,9 +19,9 @@ export function homeWork9() {
   writeResult(`Для радиуса ${r} длина окружности ${l}, площадь круга ${s}`);
 
   // 3. Пользователь вводит числа a, b и c. Написать программу, выводящую корни квадратного уравнения с коэффициентами a, b и c.
-  a = 3;
-  b = 12;
-  c = 7;
+  const a = 3;
+  const b = 12;
+  const c = 7;
   const base = math.quadratic(a, b, c);
   switch (base.length) {
     case 0: {

@@ -33,4 +33,6 @@ export function addElement() {
     const firstItem = list.querySelector("p");
     firstItem.remove();
   }
+  element.querySelector(".input").value = "";
+  element.querySelector(".button").hidden = true;
 }

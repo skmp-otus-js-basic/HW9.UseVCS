@@ -1,4 +1,4 @@
-import { addProperty, deepCopy, destruct } from "./objects";
+import { addProperty, objCopy, destruct } from "./objects";
 
 describe("Module hw4 tests", () => {
   let user;
@@ -14,14 +14,14 @@ describe("Module hw4 tests", () => {
   });
 
   it("Создать копию user и добавить поле role", () => {
-    const admin = deepCopy(user, value);
+    const admin = objCopy(user, value);
     expect(admin).toHaveProperty("role", value);
     expect(admin.role).toBe(value);
     expect(Object.keys(admin).join()).toBe("name,age,role");
   });
 
   it("Записать все поля admin в отдельные переменные", () => {
-    const admin = deepCopy(user, value);
+    const admin = objCopy(user, value);
     const arr = destruct(admin);
     const [, name] = arr[0];
     const [, age] = arr[1];

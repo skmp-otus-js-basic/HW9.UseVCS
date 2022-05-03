@@ -11,7 +11,6 @@ module.exports = {
   },
   plugins: ["jest"],
   rules: {
-    "import/prefer-default-export": "off",
     "max-len": "off",
     "no-param-reassign": "off",
     "import/no-cycle": "off",
@@ -20,5 +19,8 @@ module.exports = {
     "no-use-before-define": "off",
     "no-continue": "off",
     "no-restricted-globals": "off",
+    "no-constant-condition": "off",
+    "no-alert": "off",
+    "no-console": "off",
   },
 };

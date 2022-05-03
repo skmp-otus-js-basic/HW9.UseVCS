@@ -1,5 +1,7 @@
-export function triangle(a, b, c) {
-  return c * c === b * b + a * a;
+export function triangle(cathetus1, cathetus2, hypotenuse) {
+  return (
+    hypotenuse * hypotenuse === cathetus1 * cathetus1 + cathetus2 * cathetus2
+  );
 }
 
 export function circumference(r) {

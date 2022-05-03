@@ -1,5 +1,5 @@
 import { createUI } from "./layout";
 
-export function homeWork7(element) {
+export default function homeWork7(element) {
   createUI(element);
 }

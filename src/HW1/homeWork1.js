@@ -1,7 +1,7 @@
 import * as calc from "./calc";
 import { writeResult } from "../index";
 
-export function homeWork1() {
+export default function homeWork1() {
   // 1. В переменных a и b хранятся числа. Написать программу, которая выводит в консоль произведение и сумму этих чисел.
   const a = 5;
   const b = 17;
@@ -20,21 +20,8 @@ export function homeWork1() {
   writeResult(message);
 
   // 3. Написать программу, которая запрашивает у пользователя ввод трёхзначного числа, а потом выводит в консоль сумму цифр введённого числа.
-  let str;
-  while (true) {
-    str = prompt("Введите число из трех цифр:");
-    if (str.length !== 3) {
-      window.alert("Количество символов не равно 3!");
-      continue;
-    }
-    if (isNaN(Number(str))) {
-      window.alert(`${str} - не число!`);
-      continue;
-    }
-    break;
-  }
-  message = `Введено число ${str}. Сумма цифр введенного числа: ${calc.sumOfNumbers(
-    str
-  )}`;
+  const inOut = [];
+  calc.threeDigitRequest(inOut);
+  message = `Введено число: ${inOut[0]}. Сумма цифр введенного числа: ${inOut[1]}`;
   writeResult(message);
 }

@@ -1,3 +1,4 @@
+import MockDate from "mockdate";
 import { weekDay, minElapsed, dateCompare } from "./dates";
 
 describe("Module hw8 tests", () => {
@@ -7,7 +8,9 @@ describe("Module hw8 tests", () => {
   });
 
   it("Подсчет минут с начала дня", () => {
-    expect(minElapsed()).not.toBe(1);
+    MockDate.set(new Date("May 02, 2022 20:21"));
+    expect(minElapsed()).toBe(1221);
+    MockDate.reset();
   });
 
   it("Сравнение дат", () => {

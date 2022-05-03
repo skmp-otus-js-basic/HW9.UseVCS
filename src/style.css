@@ -53,3 +53,17 @@ h3, h4 {
    justify-content: center;
    margin: 30px auto auto;
 }
+
+.book {
+   background-image: url('../images/cherno-belaya-kartinka.jpg');
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   height: 300px;
+}
+
+img {
+   display: block;
+   margin: 0 auto;
+   height: 300px;
+}

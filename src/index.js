@@ -1,13 +1,14 @@
-import { homeWork1 } from "./HW1/homeWork1";
-import { homeWork2 } from "./HW2/homeWork2";
-import { homeWork3 } from "./HW3/homeWork3";
-import { homeWork4 } from "./HW4/homeWork4";
-import { homeWork5 } from "./HW5/homeWork5";
-import { homeWork6 } from "./HW6/homeWork6";
-import { homeWork7 } from "./HW7/homeWork7";
-import { homeWork8 } from "./HW8/homeWork8";
-import { homeWork9 } from "./HW9/homeWork9";
-import { homeWork10 } from "./HW10/homeWork10";
+import homeWork1 from "./HW1/homeWork1";
+import homeWork2 from "./HW2/homeWork2";
+import homeWork3 from "./HW3/homeWork3";
+import homeWork4 from "./HW4/homeWork4";
+import homeWork5 from "./HW5/homeWork5";
+import homeWork6 from "./HW6/homeWork6";
+import homeWork7 from "./HW7/homeWork7";
+import homeWork8 from "./HW8/homeWork8";
+import homeWork9 from "./HW9/homeWork9";
+import homeWork10 from "./HW10/homeWork10";
+import "./style.css";
 
 const hwTitle = [
   "Домашнее задание №1 «Линейные алгоритмы»",
