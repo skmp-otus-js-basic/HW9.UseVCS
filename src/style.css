@@ -1,0 +1,55 @@
+nav {
+   display: flex;
+   justify-content: center;
+   width: 50%;
+   margin: 30px auto auto;
+}
+
+#preview {
+   position: absolute;
+   background: left/contain no-repeat;
+   color: indigo;
+   display: none;
+}
+
+#preview.active {
+   display: block;
+}
+
+p {
+   text-align: center;
+   font-size: 13pt;
+}
+
+ol {
+   width: 550px; margin: 0 auto;
+}
+
+nav div {
+   width: 20pt;
+   height: 20pt;
+   font-size: 15pt;
+   line-height: 20pt;
+   text-align: center;
+   margin: auto 10px;
+   border: thin solid grey;
+   color: black;
+   background-color: white;
+   cursor: pointer;
+}
+
+nav div.active {
+   color: white;
+   background-color: indigo;
+   cursor: auto;
+}
+
+h3, h4 {
+   text-align: center;
+}
+
+.inbut {
+   display: flex;
+   justify-content: center;
+   margin: 30px auto auto;
+}
